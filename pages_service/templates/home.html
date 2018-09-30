@@ -1,0 +1,37 @@
+<html>
+<head>
+	<!-- necessary to access static files in the following of the template (in that case, the css file) -->
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static "master.css" %}"/>
+</head>
+<body>
+	<menu id="main-menu">
+		<li><a href="/">Accueil</a></li><!--
+		--><li><a href="/about/">A propos</a></li>
+	</menu>
+	<h1>Welcome on your app</h1>
+	<p>
+		<img src="https://www.python.org/static/img/python-logo.png" alt="Official Python logo"/>
+	</p>
+	<p>
+		This is a default page that I want to display when the other doesn't match.
+	</p>
+
+	<h2>You can serve "classic" routes</h2>
+	<p>
+		That's the fundamental goal of a web server, nah? Just serving browser files (html, css, js, images, etc.).
+	</p>
+
+	<h2>You can also serve REST routes eaaaaasily</h2>
+	<p>
+		You want to build a real web app, don't you? You need a good REST API and with Django Rest API,
+		that's cheese on cake.
+	</p>
+
+	<h2>In the end, you can serve data through websockets</h2>
+	<p>
+		You want to impress your audience? Change of job. You want to use websockets? There we are,
+		Django Channels is there for you.
+	</p>
+</body>
+</html>

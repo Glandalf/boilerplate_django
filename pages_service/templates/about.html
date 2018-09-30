@@ -1,0 +1,27 @@
+<html>
+<head>
+	<!-- necessary to access static files in the following of the template (in that case, the css file) -->
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static "master.css" %}"/>
+</head>
+<body>
+	<menu id="main-menu">
+		<li><a href="/">Accueil</a></li><!--
+		--><li><a href="/about/">A propos</a></li>
+	</menu>
+	<h1>About that app</h1>
+	<p>
+		This is a simple Django app, built for educational purpose, just to show a fully functional Django project.
+		Use that boilerplate as you want, share it, improve it, or just work to understand how it works.
+	</p>
+
+	<p>
+		Do not hesitate to tell me the missuses of some concepts, or to suggest some improvments.
+	</p>
+
+	<h2>Get in touch</h2>
+	<p>
+		<code>git clone https://github.com/</code>
+	</p>
+</body>
+</html>
